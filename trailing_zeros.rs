@@ -1,3 +1,8 @@
+// Copyright © 2019 Bart Massey
+// [This program is licensed under the "MIT License"]
+// Please see the file LICENSE in the source
+// distribution of this software for license terms.
+
 pub fn trailing_zeros(mut n: u64) -> u64 {
     let mut nmask = 32;
     let mut result = 0;
