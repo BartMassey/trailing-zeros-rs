@@ -3,6 +3,8 @@
 // Please see the file LICENSE in the source
 // distribution of this software for license terms.
 
+/// Return the count of "trailing zeros" in a 64-bit binary
+/// number.
 pub fn trailing_zeros(mut n: u64) -> u64 {
     let mut nmask = 32;
     let mut result = 0;
