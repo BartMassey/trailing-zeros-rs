@@ -32,3 +32,14 @@ fn test_random() {
     }
 }
 
+#[test]
+fn test_random_trailing() {
+    let mut rng = rand::thread_rng();
+    for _ in 0..100000 {
+        let mut n: u64 = rng.gen();
+        let t: u64 = rng.gen_range(3, 63);
+        n &= !((1 << t) - 1);
+        n |= 1 << t;
+        assert_eq!(t, trailing_zeros(n));
+    }
+}
