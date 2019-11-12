@@ -3,8 +3,8 @@
 // Please see the file LICENSE in the source
 // distribution of this software for license terms.
 
-use trailing_zeros::trailing_zeros;
 use rand::prelude::*;
+use trailing_zeros::trailing_zeros;
 
 #[test]
 fn test_extremes() {

@@ -19,5 +19,5 @@ pub fn trailing_zeros(mut n: u64) -> u64 {
     if n == 0 {
         result += 1;
     }
-    return result;
+    result
 }
